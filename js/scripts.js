@@ -1,7 +1,9 @@
 function drawList(array) {
   $("#list-item").empty();
-  array.forEach();
-
+  array.forEach(element => $("#list-item").append("<li>"+element+"</li>"));
+  const lastItem = $("#list-item li").last();
+  lastItem.hide();
+  lastItem.fadeIn();
 }
 
 
